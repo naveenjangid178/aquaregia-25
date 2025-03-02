@@ -1,0 +1,6 @@
+const faq = [
+    {
+        "question": "",
+        "answer": ""
+    },
+]
