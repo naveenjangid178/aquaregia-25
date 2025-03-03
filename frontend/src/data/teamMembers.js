@@ -21,7 +21,7 @@ const members = [
     },
     {
       name: 'Shubham Jeph',
-      photo: 'team/',
+      photo: 'team/shubham.jpg',
       post: 'Sponsor Manager',
       socialMedia: {
         instagram: '',
@@ -72,7 +72,7 @@ const members = [
     },
     {
       name: 'Anand Tanwar',
-      photo: 'team/',
+      photo: 'team/anand.jpg',
       post: 'Food Court',
       socialMedia: {
         instagram: '',
@@ -95,7 +95,7 @@ const members = [
     {
       name: 'Dev Parashar',
       photo: 'team/dev.jpg',
-      post: 'Multimedia Operator',
+      post: 'Photography Head',
       socialMedia: {
         instagram: 'https://www.instagram.com/devparashar2033?igsh=MWlxMXdkajd3NmNp',
         phone: 'tel:+91-9649785373',
@@ -105,7 +105,7 @@ const members = [
     {
       name: 'Jatin Choursiya',
       photo: 'team/jatin.jpg',
-      post: 'Photography Head',
+      post: 'Multimedia Operator',
       socialMedia: {
         instagram: 'https://www.instagram.com/jatin_choursiya?utm_source=qr&igsh=MW5tMWVrZnIzMjUy',
         phone: 'tel:tel:+91-7878005865',
@@ -145,13 +145,12 @@ const members = [
     },
     {
       name: 'Pankaj',
-      photo: 'team/',
+      photo: 'team/pankaj.jpg',
       post: 'Registration',
       socialMedia: {
-        instagram: '',
-        phone: 'tel:',
-        linkedin: '',
-        whatsapp: 'https://wa.me/+91-',
+        instagram: 'https://www.instagram.com/_mr_kunwar_sa?igsh=anZvdzVmdG44NHh1',
+        phone: 'tel:+91 8005598950',
+        whatsapp: 'https://wa.me/qr/YRQU464SF4NDB1',
       },
     },
     {
@@ -162,6 +161,16 @@ const members = [
         instagram: 'https://www.instagram.com/ravijanngid?igsh=MW4wYTd2NmRvNjc4aA==',
         phone: 'tel:701463146',
         whatsapp: 'http://wa.me/+91701463146',
+      },
+    },
+    {
+      name: 'Lokendra Singh',
+      photo: 'team/lokendra.jpg',
+      post: 'Anchoring',
+      socialMedia: {
+        instagram: 'https://www.instagram.com/lokkkendraaa/profilecard/?igsh=ZGQ0YjlranQxMWMy',
+        phone: 'tel:tel:+91 7357208559',
+        whatsapp: '',
       },
     },
     {

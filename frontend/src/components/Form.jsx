@@ -14,6 +14,7 @@ const Form = () => {
 
   const [filteredEvents, setFilteredEvents] = useState([]);
   const [showDropdown, setShowDropdown] = useState(false);
+  const [loading, setLoading] = useState(false); // Loader state
 
   // Extract all event names from categories
   const allEvents = Object.values(eventsData).flat().map(event => event.name);
@@ -26,10 +27,8 @@ const Form = () => {
       setShowDropdown(true);
 
       if (value === "") {
-        // If the input is empty, show all events
         setFilteredEvents(allEvents);
       } else {
-        // Filter events dynamically as user types
         const searchQuery = value.toLowerCase();
         const matchedEvents = allEvents.filter(event =>
           event.toLowerCase().includes(searchQuery)
@@ -44,34 +43,37 @@ const Form = () => {
   // Handle input focus (show all events initially)
   const handleFocus = () => {
     setShowDropdown(true);
-    setFilteredEvents(allEvents); // Show all events when input is focused
+    setFilteredEvents(allEvents);
   };
 
   // Handle event selection from dropdown
   const handleEventSelect = (eventName) => {
     setFormData({ ...formData, eventName });
-    setShowDropdown(false); // Hide dropdown after selection
+    setShowDropdown(false);
   };
 
   // Handle form submission
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setLoading(true); // Show loader when form is submitted
+
     try {
-      const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/v1/event/register`, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          fullName: formData.fullName,
-          email: formData.email,
-          phone: formData.phone,
-          college: formData.college,
-          eventName: formData.eventName,
-          teamName: formData.teamName,
-          teamMates: formData.teammates, // Changed 'teammates' to 'teamMates' to match API
-        }),
-      });
+      const response = await fetch(
+        `${import.meta.env.VITE_BACKEND_URL}/api/v1/event/register`,
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            fullName: formData.fullName,
+            email: formData.email,
+            phone: formData.phone,
+            college: formData.college,
+            eventName: formData.eventName,
+            teamName: formData.teamName,
+            teamMates: formData.teammates, // Changed 'teammates' to 'teamMates' to match API
+          }),
+        }
+      );
 
       if (response.ok) {
         alert("Registration Successful!");
@@ -90,6 +92,8 @@ const Form = () => {
     } catch (error) {
       console.error("Error submitting form:", error);
       alert("Error submitting form");
+    } finally {
+      setLoading(false); // Hide loader after response
     }
   };
 
@@ -97,7 +101,9 @@ const Form = () => {
     <div className="bg-amber-100 text-amber-900 bg-center pt-24 pb-12 px-2 h-full">
       <div className="flex items-center justify-center">
         <div className="bg-orange-200 shadow-2xl p-6 rounded-lg w-full max-w-md">
-          <h2 className="text-2xl font-bold mb-4 text-center">Register for Event</h2>
+          <h2 className="text-2xl font-bold mb-4 text-center">
+            Register for Event
+          </h2>
           <form onSubmit={handleSubmit} className="space-y-4">
             <input
               type="text"
@@ -179,11 +185,40 @@ const Form = () => {
               onChange={handleChange}
               className="w-full p-2 border rounded-md"
             />
+
+            {/* Submit button with loader */}
             <button
               type="submit"
-              className="w-full bg-orange-600 text-white py-2 rounded-md hover:bg-orange-700 transition"
+              className="w-full bg-orange-600 text-white py-2 rounded-md hover:bg-orange-700 transition flex items-center justify-center"
+              disabled={loading} // Disable button when loading
             >
-              Submit
+              {loading ? (
+                <span className="flex items-center">
+                  <svg
+                    className="animate-spin h-5 w-5 mr-2 text-white"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                  >
+                    <circle
+                      className="opacity-25"
+                      cx="12"
+                      cy="12"
+                      r="10"
+                      stroke="currentColor"
+                      strokeWidth="4"
+                    ></circle>
+                    <path
+                      className="opacity-75"
+                      fill="currentColor"
+                      d="M4 12a8 8 0 018-8v8H4z"
+                    ></path>
+                  </svg>
+                  Processing...
+                </span>
+              ) : (
+                "Submit"
+              )}
             </button>
           </form>
         </div>
