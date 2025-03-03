@@ -16,7 +16,7 @@ const TeacherCard = ({name, photo, post})=>{
 
 const Home = () => {
   return (
-    <div className='bg-[url(./home.avif)] pb-12 bg-fixed bg-center text-center text-amber-900'>
+    <div className='bg-[url(/home.avif)] pb-12 bg-fixed bg-center text-center text-amber-900'>
       <div className='h-screen flex flex-col items-center justify-center text-center gap-8'>
         <p className='text-3xl font-bold'>7-8 March 2025</p>
         <div className="flex gap-2 flex-col items-center">
