@@ -7,6 +7,7 @@ import Home from "./pages/Home"
 import Form from "./components/Form"
 import Team from "./pages/Team"
 import FAQ from "./pages/FAQ"
+import Developer from "./pages/Developer"
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
         <Route path="/team" element={<Team />} />
         <Route path="/faq" element={<FAQ />} />
         <Route path="/register" element={<Form />} />
+        <Route path="/developers" element={<Developer />} />
       </Routes>
     <Footer />
     </BrowserRouter>

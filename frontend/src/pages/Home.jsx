@@ -18,12 +18,12 @@ const Home = () => {
   return (
     <div className='bg-[url(./home.avif)] pb-12 bg-fixed bg-center text-center text-amber-900'>
       <div className='h-screen flex flex-col items-center justify-center text-center gap-8'>
-        <p className='text-2xl font-medium'>7-8 March 2025</p>
+        <p className='text-3xl font-bold'>7-8 March 2025</p>
         <div className="flex gap-2 flex-col items-center">
-          <Logo classes={"w-80"} />
-          <h2 className='text-xl'> Celebrating 10<sup>th</sup> Anniversary</h2>
+          <Logo classes={"md:w-[26rem] w-72"} />
+          <h2 className='text-2xl font-medium'> Celebrating 10<sup>th</sup> Anniversary</h2>
         </div>
-        <Link to="register"><button className='p-1 px-3 hover:font-medium border border-amber-900 rounded-full text-xl'>Book Your Slot</button></Link>
+        <Link to="register"><button className='p-2 shadow-lg shadow-orange-900 px-4 border border-amber-900 rounded-full text-xl'><p className='hover:font-medium object-cover'>Book Your Slot</p></button></Link>
       </div>
 
       <div className="flex flex-col md:flex-row text-center items-center md:pr-8 md:py-4 md:w-3/4 md:p-0 p-8 w-full justify-between m-auto bg-amber-100 rounded-3xl">

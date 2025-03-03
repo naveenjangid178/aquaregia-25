@@ -108,7 +108,7 @@ const events = {
     {
       id: "folk-group-dance",
       name: "Group Dance (Folk)",
-      image: "/events",
+      image: "/events/folk-dance.webp",
       description: "!From hills to the plains,folk dance break all the chains!. Our Group Folk Dance Bash is all about teamwork, beats, and show-stopping moves, energy and expression From diverse genres to imaginative themes, bring your A-game and let the group Folk  dance magic unfold!",
       rules: {
         general: [
@@ -476,7 +476,7 @@ const events = {
     {
       id: "prop-based-photography",
       name: "Prop Based Photography",
-      image: "/events",
+      image: "/events/prop-based-photography.jpg",
       description: "Props-Based Photography Contest!  Unleash your creativity with our Props-Based Photography Challenge! Use unique props to craft stunning, story-driven shots. Judges will evaluate originality, composition, and artistic expression. Capture the magic and let your photos tell a story!",
       rules: {
         general: [
@@ -588,7 +588,7 @@ const events = {
     {
       id: "devils-advocate",
       name: "Devil's Advocate",
-      image: "/events",
+      image: "/events/devils-advocate.jpg",
       description: "Step into the shoes of the ultimate debater in our Devil’s Advocate Challenge! Defend the unexpected, argue the unthinkable, and outsmart your opponents with sharp logic and wit. Judges will assess your reasoning and persuasion—can you turn the tide and win the debate?",
       rules: {
         general: [
@@ -680,7 +680,7 @@ const events = {
     {
       id: "shayri",
       name: "Shayri",
-      image: "/events",
+      image: "/events/shayari.jpg",
       description: "Mehfil-e-Sukhan, a poetic celebration, is an enchanting event to be introduced in this year's Aquaregia at Maharaja College, Jaipur. The event will showcase the timeless art of shayari, where participants will immerse the audience in their eloquent verses and respond to shayari with shayari, creating a mesmerizing chain of poetic dialogue. This event aims to revive the age-old tradition of baitbazi and provide a platform for budding and seasoned poets to share their talent.",
       rules: {
         general: [
@@ -782,7 +782,7 @@ const events = {
     {
       id: "bottle-brush-painting",
       name: "Bottle Brush Painting",
-      image: "/events",
+      image: "/events/bottle-brush.jpeg",
       description: "Get ready for the Bottle Brush Challenge! Show off your speed and precision as you compete to clean the bottle in record time. Judges will assess your technique and efficiency. Join the fun and brush your way to victory!",
       rules: {
         general: [
@@ -836,7 +836,7 @@ const events = {
     {
       id: "relay-race",
       name: "Relay Race",
-      image: "/events",
+      image: "/events/relay-race.jpg",
       description: "Get set for the ultimate speed and teamwork test in our Relay Race Challenge! Pass the baton with precision, race against the clock, and push your limits. Judges will evaluate your speed, coordination, and team spirit. Join the thrill and sprint your way to victory!",
       rules: {
         general: [
@@ -878,7 +878,7 @@ const events = {
     {
       id: "futsal",
       name: "Futsal",
-      image: "/events",
+      image: "/events/futsal.avif",
       description: "Get ready for the ultimate futsal showdown! Gather your agile team and hit the court with precision and speed. Experience the thrill of fast-paced action as you weave through opponents and score spectacular goals. Join the excitement, showcase your skills, and play your way to victory!",
       rules: {
         general: [

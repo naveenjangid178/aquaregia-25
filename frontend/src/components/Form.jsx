@@ -57,7 +57,7 @@ const Form = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch("http://localhost:8000/api/v1/event/register", {
+      const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/v1/event/register`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
