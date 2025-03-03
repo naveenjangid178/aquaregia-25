@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 const Developer = () => {
   return (
-    <div className='h-screen flex bg-[url(./team.jpg)] bg-cover bg-center bg-fixed items-center justify-center'>
+    <div className='h-screen flex bg-[url(/team.jpg)] bg-cover bg-center bg-fixed items-center justify-center'>
     <div className="w-60 rounded overflow-hidden bg-transparent shadow-lg shadow-orange-900 m-4">
       <img src='./team/naveen.webp' alt="Naveen Kumar" className="w-full h-52 p-2 object-cover rounded-xl" />
       <div className="px-6 py-4 text-center">
