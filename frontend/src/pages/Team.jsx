@@ -30,7 +30,7 @@ const MemberCard = ({ member }) => {
 // MemberList Component
 const Team = () => {
   return (
-    <div className="flex flex-wrap justify-center bg-[url(./team.jpg)] bg-fixed bg-center bg-cover pt-20 gap-12 md:px-12 px-2 pb-12">
+    <div className="flex flex-wrap justify-center bg-[url(/team.jpg)] bg-fixed bg-center bg-cover pt-20 gap-12 md:px-12 px-2 pb-12">
       {members.map((member, index) => (
         <MemberCard key={index} member={member} />
       ))}
