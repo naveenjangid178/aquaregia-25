@@ -679,7 +679,7 @@ const events = {
     },
     {
       id: "shayri",
-      name: "Shayri",
+      name: "Mehfil-e-Sukhan",
       image: "/events/shayari.jpg",
       description: "Mehfil-e-Sukhan, a poetic celebration, is an enchanting event to be introduced in this year's Aquaregia at Maharaja College, Jaipur. The event will showcase the timeless art of shayari, where participants will immerse the audience in their eloquent verses and respond to shayari with shayari, creating a mesmerizing chain of poetic dialogue. This event aims to revive the age-old tradition of baitbazi and provide a platform for budding and seasoned poets to share their talent.",
       rules: {

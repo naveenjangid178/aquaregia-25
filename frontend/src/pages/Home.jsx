@@ -66,7 +66,7 @@ const Home = () => {
         </div>
 
         <div className='flex flex-col gap-8'>
-          <h2 className='font-bold text-3xl'>CO-CONVENERS</h2>
+          <h2 className='font-bold text-3xl'>ORGANISING SECRETARIES</h2>
           <div className='flex gap-12 md:flex-row flex-col'>
           <TeacherCard photo = {"./teachers/ravi.jpg"} name ={"DR. RAVI RATN GAUR"} />
           <TeacherCard photo = {"./teachers/jyoti-jain.jpg"} name ={"DR. JYOTI JAIN"} />

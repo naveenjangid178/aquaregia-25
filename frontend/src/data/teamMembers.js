@@ -114,13 +114,12 @@ const members = [
     },
     {
       name: 'Divesh Jangir',
-      photo: 'team/',
+      photo: 'team/divesh.jpg',
       post: 'Decoration Management',
       socialMedia: {
-        instagram: '',
-        phone: 'tel:',
-        linkedin: '',
-        whatsapp: 'https://wa.me/+91-',
+        instagram: 'https://www.instagram.com/artistt.dj?igsh=ZXlneHJsYndsdnJ6',
+        phone: 'tel:+91 7023692491',
+        whatsapp: 'https://wa.me/qr/62BCUKFWQF7SP1',
       },
     },
     {
