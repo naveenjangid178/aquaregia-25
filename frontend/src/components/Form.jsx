@@ -8,8 +8,8 @@ const Form = () => {
     phone: "",
     college: "",
     eventName: "",
-    teamName: "",
-    teammates: "",
+    teamName: "NA",
+    teammates: "NA",
   });
 
   const [filteredEvents, setFilteredEvents] = useState([]);
@@ -83,8 +83,8 @@ const Form = () => {
           phone: "",
           college: "",
           eventName: "",
-          teamName: "",
-          teammates: "",
+          teamName: "NA",
+          teammates: "NA",
         });
       } else {
         alert("Something went wrong. Try again!");
