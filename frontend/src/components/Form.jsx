@@ -48,8 +48,21 @@ const Form = () => {
 
   // Handle event selection from dropdown
   const handleEventSelect = (eventName) => {
+    if (eventName == "BGMI") {
+      setFormData({
+        fullName: "",
+        email: "",
+        phone: "",
+        college: "",
+        eventName: "",
+        teamName: "NA",
+        teammates: "NA",
+      })
+      alert("Sloat is Full");
+    }else {
     setFormData({ ...formData, eventName });
     setShowDropdown(false);
+    }
   };
 
   // Handle form submission
