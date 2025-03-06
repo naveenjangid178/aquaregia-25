@@ -48,7 +48,7 @@ const Form = () => {
 
   // Handle event selection from dropdown
   const handleEventSelect = (eventName) => {
-    if (eventName == "BGMI") {
+    if (eventName == "BGMI" || eventName == "Valorant") {
       setFormData({
         fullName: "",
         email: "",
