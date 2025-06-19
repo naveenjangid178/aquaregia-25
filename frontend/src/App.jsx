@@ -8,6 +8,8 @@ import Form from "./components/Form"
 import Team from "./pages/Team"
 import FAQ from "./pages/FAQ"
 import Developer from "./pages/Developer"
+import BlogList from './components/BlogList';
+import BlogDetail from './components/BlogDetail';
 
 function App() {
 
@@ -22,6 +24,8 @@ function App() {
         <Route path="/faq" element={<FAQ />} />
         <Route path="/register" element={<Form />} />
         <Route path="/developers" element={<Developer />} />
+        <Route path="/blog" element={<BlogList />} />
+          <Route path="/blog/:id" element={<BlogDetail />} />
       </Routes>
     <Footer />
     </BrowserRouter>
